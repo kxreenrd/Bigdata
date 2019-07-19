@@ -10,10 +10,6 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         
-        
-        
-        
-        
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -30,20 +26,26 @@
 <!--                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>-->
-<!--                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#registro">Registro</a>
+                            <a class="nav-link js-scroll-trigger" href="vista_2016.php">2016</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#lista">Lista</a>
+                            <a class="nav-link js-scroll-trigger" href="vista_2017.php">2017</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="vista_2018.php">2018</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="vista_2019.php">2019</a>
                         </li>
                     </ul>
-                </div>-->
+                </div>
             </div>
         </nav>
 
-        <header class="bg-primary text-white">
+        <header class="color_fondo text-white">
             <div class="container text-center">
                 <h3>Construcción de un modelo predictivo para casos de violencia intrafamiliar en los departamentos de Colombia para el año 2020 en un ambiente big data.</h3>
                <p class="lead">Aqui iría un breve introducción de la problematica del proyecto y lo que se quiere mostrar</p>
@@ -56,35 +58,43 @@
                     <div class="card-body">
                         <h4 class="card-title">Año 2016</h4>
                         <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
-<!--                        <a href="#" class="btn btn-primary">See Profile</a>-->
+                        <a href="vista_2016.php" class="btn color_fondo">Ver graficas</a>
                     </div>
-                    <img class="card-img-bottom" src="img/grafica1.jpg" alt="Card image" style="width:100%">
+<!--                    <img class="card-img-bottom" src="img/grafica1.jpg" alt="Card image" style="width:100%">-->
+<!--                    <iframe class="embed-responsive-item" src="img/2016.html" height="100%" width="100%"></iframe>-->
                 </div>
                 <div class="card col-sm-3" style="float:left">
                     <div class="card-body">
                         <h4 class="card-title">Año 2017</h4>
                         <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
-<!--                        <a href="#" class="btn btn-primary">See Profile</a>-->
+                        <a href="vista_2017.php" class="btn color_fondo">Ver graficas</a>
                     </div>
-                    <img class="card-img-bottom" src="img/grafica1.jpg" alt="Card image" style="width:100%">
+<!--                    <img class="card-img-bottom" src="img/grafica1.jpg" alt="Card image" style="width:100%">-->
                 </div>
                 <div class="card col-sm-3" style="float:left">
                     <div class="card-body">
                         <h4 class="card-title">Año 2018</h4>
                         <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
-<!--                        <a href="#" class="btn btn-primary">See Profile</a>-->
+                        <a href="vista_2018.php" class="btn color_fondo">Ver graficas</a>
                     </div>
-                    <img class="card-img-bottom" src="img/grafica1.jpg" alt="Card image" style="width:100%">
+<!--                    <img class="card-img-bottom" src="img/grafica1.jpg" alt="Card image" style="width:100%">-->
                 </div>
                 <div class="card col-sm-3" >
                     <div class="card-body">
                         <h4 class="card-title">Año 2019</h4>
                         <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
-<!--                        <a href="#" class="btn btn-primary">See Profile</a>-->
+                       <a href="vista_2019.php" class="btn color_fondo">Ver graficas</a>
                     </div>
-                    <img class="card-img-bottom" src="img/grafica1.jpg" alt="Card image" style="width:100%">
+<!--                    <img class="card-img-bottom" src="img/grafica1.jpg" alt="Card image" style="width:100%">-->
                 </div>
-                
+                <div class="card col-sm-12" style="text-align: center;">
+                    <div class="card-body">
+                        <h4 class="card-title">Año 2020</h4>
+                        <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                       <a href="vista_2020.php" class="btn color_fondo">Ver graficas</a>
+                    </div>
+<!--                    <img class="card-img-bottom" src="img/grafica1.jpg" alt="Card image" style="width:100%">-->
+                </div>
             </div>
             
         </section>
@@ -98,25 +108,7 @@
             <!-- /.container -->
         </footer>
         <script>
-            $("#identificacion").keypress(function(){
-                var cedula=($(this).val()).replace(/\D/g, "");
-
-                var cedulas= cedula.replace(/([0-9])([0-9]{3})$/, '$1.$2');
-                        cedulas= cedula.replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ".");
-               $("#identificacion").val(cedulas);
-
-            });
-            
-            /*$("#nombre").keypress(function(){
-		$("input").css("border","1px solid #000");
-		if($("#nombre").val().match(/^[a-zA-Z]+$/)){
-			$(this).css("border","1px solid green");
-			$("#dato").html("");
-		}else{
-			$(this).css("border","1px solid red");
-			$("#dato").html("<p>Por favor solo ingresar letras en el campo nombre<p>");
-		}
-	});*/
+           
         
         </script>
 
